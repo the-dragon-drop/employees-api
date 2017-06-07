@@ -1,4 +1,7 @@
 class Api::V1::EmployeesController < ApplicationController
+  def test
+    render json: params
+  end
   def index
     @employees = Employee.all
   end
